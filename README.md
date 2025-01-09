@@ -8,28 +8,28 @@ The notebook covers data loading, preprocessing, model building, training, and e
 ### Dependencies
 To run the code in the notebook, you need to have the following dependencies installed:
 
-from io import open
-import os
-import re
-import random
-import xml.etree.ElementTree as ET
+- from io import open
+- import os
+- import re
+- import random
+- import xml.etree.ElementTree as ET
 
-import gensim.downloader as api
+- import gensim.downloader as api
 
-import torch
-import torch.nn as nn
-from torch import optim
-import torch.nn.functional as F
+- import torch
+- import torch.nn as nn
+- from torch import optim
+- import torch.nn.functional as F
 
-import numpy as np
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler
+- import numpy as np
+- from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 
-import torch
-from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-import nltk
-nltk.download('punkt')
+- import torch
+- from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+- import nltk
+- nltk.download('punkt')
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+- device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 ### Running the Code
 To run the code, simply open the Jupyter Notebook file and execute the cells sequentially. 
